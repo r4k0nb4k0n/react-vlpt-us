@@ -6,7 +6,7 @@
 //   By: hyechoi <hyechoi@student.42seoul.kr>       +#+  +:+       +#+        //
 //                                                +#+#+#+#+#+   +#+           //
 //   Created: 2020/11/19 20:14:34 by hyechoi           #+#    #+#             //
-//   Updated: 2020/11/22 22:01:50 by hyechoi          ###   ########.fr       //
+//   Updated: 2020/11/22 22:03:12 by hyechoi          ###   ########.fr       //
 //                                                                            //
 // ************************************************************************** //
 
@@ -22,6 +22,10 @@ import React from 'react';
 */
 function Hello({ color, name }) {
 	return <div style={{ color: color }}>{ name }너구리와 라쿤은 다르다</div>
+}
+
+Hello.defaultProps = {
+	name: '뚱딴지'
 }
 
 /*
