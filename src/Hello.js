@@ -6,7 +6,7 @@
 //   By: hyechoi <hyechoi@student.42seoul.kr>       +#+  +:+       +#+        //
 //                                                +#+#+#+#+#+   +#+           //
 //   Created: 2020/11/19 20:14:34 by hyechoi           #+#    #+#             //
-//   Updated: 2020/11/22 21:59:28 by hyechoi          ###   ########.fr       //
+//   Updated: 2020/11/22 22:01:50 by hyechoi          ###   ########.fr       //
 //                                                                            //
 // ************************************************************************** //
 
@@ -20,8 +20,8 @@ import React from 'react';
 ** 있다.
 ** 리액트 컴포넌트에서는 XML  형식의 값을 반환해줄 수 있는데 이를 JSX라고 한다.
 */
-function Hello(props) {
-	return <div>{ props.name }너구리와 라쿤은 다르다</div>
+function Hello({ color, name }) {
+	return <div style={{ color: color }}>{ name }너구리와 라쿤은 다르다</div>
 }
 
 /*
