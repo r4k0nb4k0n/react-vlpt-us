@@ -1,4 +1,5 @@
 import React from "react";
+import "./Button.scss";
 
 const CreateUser = ({ username, email, onChange, onCreate }) => {
   return (
@@ -15,7 +16,9 @@ const CreateUser = ({ username, email, onChange, onCreate }) => {
         onChange={onChange}
         value={email}
       />
-      <button onClick={onCreate}>등록</button>
+      <button className="Button" onClick={onCreate}>
+        등록
+      </button>
     </div>
   );
 };
